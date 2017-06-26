@@ -2,7 +2,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-const createLink = ({label, link, isText}) => isText ? ( 
+const createLink = ({label, link, isText}) => isText ? (
   <a><b>{label}</b></a>
 ) : (
   <Link to={link}>{label}</Link>
