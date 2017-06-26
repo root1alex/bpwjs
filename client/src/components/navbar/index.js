@@ -17,17 +17,29 @@ export default ({user, current}) => (
 
       <ul className="nav navbar-nav">
         <li>
-          {createLink({label: 'Browse questions', link: '/', isText: current === '/'})}
+          {createLink({
+            label: 'Browse questions',
+            link: '/',
+            isText: current === '/'
+          })}
         </li>
         <li>
-          {createLink({label: 'Create new question', link: '/create', isText: current === '/create'})}
+          {createLink({
+            label: 'Create new question',
+            link: '/create',
+            isText: current === '/create'
+          })}
         </li>
       </ul>
 
       {user && (
         <ul className="nav navbar-nav navbar-right">
           <li>
-            {createLink({label: `Logged in as "${user.login}"`, link: '/profile/me', isText: current === '/profile/me'})}
+            {createLink({
+              label: `Logged in as "${user.login}"`,
+              link: '/profile/me',
+              isText: current === '/profile/me'
+            })}
           </li>
         </ul>
       )}

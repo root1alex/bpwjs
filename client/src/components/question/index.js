@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch) => ({
   updateQuestion: payload => dispatch(updateQuestion(payload)),
 });
 
-class Question extends React.Component {
+export class Question extends React.Component {
   constructor() {
     super();
 
@@ -65,13 +65,16 @@ class Question extends React.Component {
             <span>
               <button
                 className="btn btn-link"
-                onClick={this.handleDeleteQuestionClick}>
+                id="deleteBtn"
+                onClick={e => this.handleDeleteQuestionClick(e)}>
                 <span className="glyphicon glyphicon-trash" />
               </button>
               {editing ? '' : (
                 <button
                   className="btn btn-link"
-                  onClick={e => this.toggleEdit(e)}>
+                  onClick={e => this.toggleEdit(e)}
+                  id="editBtn"
+                >
                   <span className="glyphicon glyphicon-pencil" />
                 </button>
               )}
@@ -82,13 +85,20 @@ class Question extends React.Component {
               <input
                 type="text"
                 ref={i => { this.questionInput = i; }}
-                defaultValue={question.text} />
+                defaultValue={question.text}
+                id="questionText"
+              />
               <button
                 className="btn btn-link"
-                onClick={e => this.handleUpdateQuestionClick(e)}>
+                onClick={e => this.handleUpdateQuestionClick(e)}
+                id="updateBtn"
+              >
                 <span className="glyphicon glyphicon-ok" />
               </button>
-              <button className="btn btn-link" onClick={e => this.toggleEdit(e)}>
+              <button
+                className="btn btn-link"
+                onClick={e => this.toggleEdit(e)}
+              >
                 <span className="glyphicon glyphicon-remove" />
               </button>
             </span>
@@ -123,7 +133,8 @@ class Question extends React.Component {
             <button
               type="submit"
               className="btn btn-default"
-              onClick={this.handleAnswerClick}>Answer
+              id="answerBtn"
+              onClick={e => this.handleAnswerClick(e)}>Answer
             </button>
           </form>
         </div>

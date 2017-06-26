@@ -9,7 +9,7 @@ const mapDispatchToProps = (dispatch) => ({
   updateUser: payload => dispatch(updateUser(payload)),
 });
 
-const User = ({user, edit, updateUser}) => {
+export const User = ({user, edit, updateUser}) => {
   let userInput;
 
   const saveUser = () => {
@@ -26,7 +26,9 @@ const User = ({user, edit, updateUser}) => {
           <input
             type="text"
             ref={i => {userInput = i;}}
-            defaultValue={user.login} /> 
+            defaultValue={user.login}
+            id="loginInput"
+          /> 
         ) : user.login}
 
         {edit && (
