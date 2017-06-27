@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# Profile page 1`] = `
+<div>
+  <Component
+    current="/profile/$(params.id}"
+    user={
+      Object {
+        "id": "0",
+        "login": "test",
+        "registrationDate": 2017-01-31T21:01:01.001Z,
+      }
+    }
+  />
+  <Connect(User)
+    edit={true}
+    user={
+      Object {
+        "id": "0",
+        "login": "test",
+        "registrationDate": 2017-01-31T21:01:01.001Z,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`# Profile page wrapper 1`] = `
+<Profile
+  getUser={[Function]}
+  loadedUser={
+    Object {
+      "id": "0",
+      "login": "test",
+      "registrationDate": 2017-01-31T21:01:01.001Z,
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  user={
+    Object {
+      "id": "0",
+      "login": "test",
+      "registrationDate": 2017-01-31T21:01:01.001Z,
+    }
+  }
+/>
+`;
