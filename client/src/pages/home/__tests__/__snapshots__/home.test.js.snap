@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# Home page 1`] = `
+<div>
+  <Component
+    current="/"
+    user={
+      Object {
+        "id": "0",
+        "login": "test",
+        "registrationDate": 2017-01-31T21:01:01.001Z,
+      }
+    }
+  />
+  <div>
+    <Connect(Question)
+      onAnswer={[Function]}
+      question={
+        Object {
+          "answers": Array [
+            Object {
+              "answer": "Text answer",
+            },
+          ],
+          "id": "0",
+          "owner": Object {
+            "id": "0",
+            "login": "test",
+            "registrationDate": 2017-01-31T21:01:01.001Z,
+          },
+          "text": "Question text",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`# Home page wrapper 1`] = `
+<Home
+  doAnswer={[Function]}
+  fetchQuestions={[Function]}
+  questions={Array []}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  user={
+    Object {
+      "id": "0",
+      "login": "test",
+      "registrationDate": 2017-01-31T21:01:01.001Z,
+    }
+  }
+/>
+`;
