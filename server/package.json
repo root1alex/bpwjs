@@ -16,16 +16,16 @@
     "javascript",
     "experts"
   ],
-  "author": "Tim Ermilov <yamalight@gmail.com> (http://codezen.net)",
+  "author": "alex r",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yamalight/building-products-with-js.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/yamalight/building-products-with-js/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/yamalight/building-products-with-js#readme",
+  "homepage": "",
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
