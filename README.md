@@ -1,6 +1,6 @@
 # Building products with javascript
 
-> Free open-source test project
+> Free open-source test project js practice
 
 ## License
 
